@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */; };
+		AC719D9D230FE56E00FCB0DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */; };
+		AC719D9F230FE5F300FCB0DE /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */; };
+		AC719DA1230FE62B00FCB0DE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */; };
+		AC719DA3230FE66800FCB0DE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */; };
+		AC719DA5230FE6AC00FCB0DE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */; };
 		ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */; };
 		ACD2BCC6230F200B000B2F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC5230F200B000B2F39 /* Assets.xcassets */; };
 		ACD2BCC9230F200B000B2F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */; };
@@ -17,6 +22,11 @@
 
 /* Begin PBXFileReference section */
 		AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleUpViewController.swift; sourceTree = "<group>"; };
+		AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ACD2BCBB230F200B000B2F39 /* InstagramCHT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCHT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD2BCC5230F200B000B2F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +68,13 @@
 			children = (
 				ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */,
 				ACD2BCDA230F3615000B2F39 /* SingleViewController.swift */,
+				AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */,
+				AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */,
+				AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */,
+				AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */,
 				ACD2BCD8230F27B3000B2F39 /* Main.storyboard */,
 				AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */,
+				AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */,
 				ACD2BCC5230F200B000B2F39 /* Assets.xcassets */,
 				ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */,
 				ACD2BCCA230F200B000B2F39 /* Info.plist */,
@@ -143,6 +158,11 @@
 				ACD2BCDB230F3615000B2F39 /* SingleViewController.swift in Sources */,
 				AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */,
 				ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */,
+				AC719D9D230FE56E00FCB0DE /* HomeViewController.swift in Sources */,
+				AC719DA3230FE66800FCB0DE /* ActivityViewController.swift in Sources */,
+				AC719D9F230FE5F300FCB0DE /* DiscoverViewController.swift in Sources */,
+				AC719DA5230FE6AC00FCB0DE /* ProfileViewController.swift in Sources */,
+				AC719DA1230FE62B00FCB0DE /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
