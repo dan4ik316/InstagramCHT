@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */; };
 		ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */; };
 		ACD2BCC6230F200B000B2F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC5230F200B000B2F39 /* Assets.xcassets */; };
 		ACD2BCC9230F200B000B2F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleUpViewController.swift; sourceTree = "<group>"; };
 		ACD2BCBB230F200B000B2F39 /* InstagramCHT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCHT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD2BCC5230F200B000B2F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */,
 				ACD2BCDA230F3615000B2F39 /* SingleViewController.swift */,
 				ACD2BCD8230F27B3000B2F39 /* Main.storyboard */,
+				AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */,
 				ACD2BCC5230F200B000B2F39 /* Assets.xcassets */,
 				ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */,
 				ACD2BCCA230F200B000B2F39 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD2BCDB230F3615000B2F39 /* SingleViewController.swift in Sources */,
+				AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */,
 				ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				ACD2BCCF230F200B000B2F39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
