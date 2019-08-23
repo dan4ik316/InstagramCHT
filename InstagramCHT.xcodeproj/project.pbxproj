@@ -13,10 +13,12 @@
 		AC719DA1230FE62B00FCB0DE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */; };
 		AC719DA3230FE66800FCB0DE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */; };
 		AC719DA5230FE6AC00FCB0DE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */; };
+		AC719DA7230FF88F00FCB0DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC719DA6230FF88F00FCB0DE /* Main.storyboard */; };
+		AC719DAB2310032400FCB0DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC719DAA2310032400FCB0DE /* Home.storyboard */; };
 		ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */; };
 		ACD2BCC6230F200B000B2F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC5230F200B000B2F39 /* Assets.xcassets */; };
 		ACD2BCC9230F200B000B2F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */; };
-		ACD2BCD9230F27B3000B2F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCD8230F27B3000B2F39 /* Main.storyboard */; };
+		ACD2BCD9230F27B3000B2F39 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCD8230F27B3000B2F39 /* Start.storyboard */; };
 		ACD2BCDB230F3615000B2F39 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BCDA230F3615000B2F39 /* SingleViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,12 +29,14 @@
 		AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AC719DA6230FF88F00FCB0DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC719DAA2310032400FCB0DE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		ACD2BCBB230F200B000B2F39 /* InstagramCHT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCHT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD2BCC5230F200B000B2F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD2BCC8230F200B000B2F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD2BCCA230F200B000B2F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD2BCD8230F27B3000B2F39 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ACD2BCD8230F27B3000B2F39 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		ACD2BCDA230F3615000B2F39 /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +51,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC719DB22310136600FCB0DE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC719DA6230FF88F00FCB0DE /* Main.storyboard */,
+				ACD2BCD8230F27B3000B2F39 /* Start.storyboard */,
+				AC719DAA2310032400FCB0DE /* Home.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC719DB32310138C00FCB0DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */,
+				AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */,
+				AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */,
+				ACD2BCDA230F3615000B2F39 /* SingleViewController.swift */,
+				AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */,
+				AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */,
+				AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		ACD2BCB2230F2009000B2F39 = {
 			isa = PBXGroup;
 			children = (
@@ -67,14 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */,
-				ACD2BCDA230F3615000B2F39 /* SingleViewController.swift */,
-				AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */,
-				AC719DA0230FE62B00FCB0DE /* CameraViewController.swift */,
-				AC719DA2230FE66800FCB0DE /* ActivityViewController.swift */,
-				AC719DA4230FE6AC00FCB0DE /* ProfileViewController.swift */,
-				ACD2BCD8230F27B3000B2F39 /* Main.storyboard */,
-				AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */,
-				AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */,
+				AC719DB32310138C00FCB0DE /* ViewControllers */,
+				AC719DB22310136600FCB0DE /* Storyboards */,
 				ACD2BCC5230F200B000B2F39 /* Assets.xcassets */,
 				ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */,
 				ACD2BCCA230F200B000B2F39 /* Info.plist */,
@@ -142,9 +164,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD2BCD9230F27B3000B2F39 /* Main.storyboard in Resources */,
+				ACD2BCD9230F27B3000B2F39 /* Start.storyboard in Resources */,
+				AC719DAB2310032400FCB0DE /* Home.storyboard in Resources */,
 				ACD2BCC9230F200B000B2F39 /* LaunchScreen.storyboard in Resources */,
 				ACD2BCC6230F200B000B2F39 /* Assets.xcassets in Resources */,
+				AC719DA7230FF88F00FCB0DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
