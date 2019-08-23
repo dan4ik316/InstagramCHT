@@ -190,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="1938" y="-994"/>
         </scene>
-        <!--NavigationHome-->
+        <!--Home-->
         <scene sceneID="NOD-Lx-znc">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="NavigationHome" id="2ci-Ny-UaD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="2ci-Ny-UaD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="l74-EF-9Xg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Waa-BP-EMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
