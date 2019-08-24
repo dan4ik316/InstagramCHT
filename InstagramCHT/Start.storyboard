@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17G65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ov7-XG-a8N">
-                                <rect key="frame" x="20" y="261" width="335" height="144"/>
+                                <rect key="frame" x="20" y="261.5" width="335" height="144"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEZ-WN-oAS">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -152,7 +152,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.59904751710000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="g6e-v2-yoj" kind="presentation" id="u8X-Ni-HCY"/>
+                                            <action selector="signUpBtn_tuochUpInside:" destination="8uQ-98-NNy" eventType="touchUpInside" id="88V-yo-10E"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -213,7 +213,4 @@
     <resources>
         <image name="images" width="231" height="218"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="u8X-Ni-HCY"/>
-    </inferredMetricsTieBreakers>
 </document>
