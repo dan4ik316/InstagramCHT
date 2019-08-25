@@ -16,6 +16,7 @@ class SingleUpViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var profileImage: UIImageView!
     
@@ -68,7 +69,30 @@ class SingleUpViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SingleUpViewController.handleSelectProfileImageView))
         profileImage.addGestureRecognizer(tapGesture)
         profileImage.isUserInteractionEnabled = true
+        signUpButton.isEnabled = false
+        handleTextField()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+    }
+    
+    func handleTextField(){
+        usernameTextField.addTarget(self, action: #selector(SingleUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
+        emailTextField.addTarget(self, action: #selector(SingleUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
+        passwordTextField.addTarget(self, action: #selector(SingleUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
+    }
+    
+    func textFieldDidChange(){
+        guard let username = usernameTextField.text, !username.isEmpty, let email = emailTextField.text, !email.isEmpty, let password = passwordTextField.text, !password.isEmpty else{
+            signUpButton.setTitleColor(UIColor.lightText, for: UIControlState.normal)
+                signUpButton.isEnabled = false
+            return
+        }
+        signUpButton.setTitleColor(UIColor.white, for: UIControlState.normal)
+        signUpButton.isEnabled = true
     }
     
     func handleSelectProfileImageView(){
@@ -83,58 +107,20 @@ class SingleUpViewController: UIViewController {
         
     }
     @IBAction func signUpBtn_tuochUpInside(_ sender: Any) {
-       
-        
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {(authResult, error) in
-            if let user = authResult?.user {
-                print(user)
-                
-                let uid = user.uid
-                var profileImageUrl: String?
-                
-                let storageRef = Storage.storage().reference(forURL: "gs://instagramcht-50ea5.appspot.com").child("profile_image").child(uid)
-                if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1){
-                    storageRef.putData(imageData, metadata: nil, completion: {(metadata, error) in
-                        if error != nil {
-                            return
-                        }
-                      //let profileImageUrl = metadata?.downloadURL().absoluteString
-                        storageRef.downloadURL(completion: { (url, error) in
-                            if error != nil {
-                                print("Failed to download url:", error!)
-                                return
-                            } else {
-                                //Do something with url
-                                profileImageUrl = url?.absoluteString
-                            }
-                            
-                        })
-                        
-                    })
-                }
-                
-                
-                
-                
-                self.ref = Database.database().reference()
-                let userReference = self.ref.child("users")
-                //print(userReference.description()) : https://instagramcht-50ea5.firebaseio.com
-                //let uid = user.uid
-                let newUserReference = userReference.child(uid)
-                newUserReference.setValue(["username":self.usernameTextField.text!, "email": self.emailTextField.text!, "profileImageUrl": profileImageUrl])
-                print(" description: \(newUserReference.description())")
-                
-                
-            
-                
-        } else {
-            print(error!.localizedDescription)
-            return
-            }
-            
-        })
-        
-        
+        view.endEditing(true)
+        ProgressHUD.show("Waiting...", interaction: false)
+        if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1){
+        AuthService.signUp(username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, imageData: imageData, onSuccess: {
+            ProgressHUD.showSuccess("Success")
+            self.performSegue(withIdentifier: "signUpToTabbarVC", sender: nil)
+        }, onError: { (errorString) in
+            print(errorString!)
+            ProgressHUD.showError(errorString!)
+            })
+        }else{
+            print("Profile Image can't be empty")
+            ProgressHUD.showError("Profile Image can't be empty")
+        }
     }
 }
 

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A0D557967D4BA7D556AA8A64 /* Pods_InstagramCHT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE03A46B5BE08F7A9F6BA4 /* Pods_InstagramCHT.framework */; };
+		AC317ACE2312BE2800EB5092 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC317ACD2312BE2800EB5092 /* AuthService.swift */; };
+		AC317AD02312D9F700EB5092 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC317ACF2312D9F700EB5092 /* Config.swift */; };
+		AC317AD52312E16E00EB5092 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AC317AD22312E16A00EB5092 /* ProgressHUD.m */; };
+		AC317AD62312E16E00EB5092 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC317AD42312E16B00EB5092 /* ProgressHUD.bundle */; };
 		AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */; };
 		AC719D9D230FE56E00FCB0DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */; };
 		AC719D9F230FE5F300FCB0DE /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */; };
@@ -26,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		8BEE03A46B5BE08F7A9F6BA4 /* Pods_InstagramCHT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramCHT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC317ACD2312BE2800EB5092 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AC317ACF2312D9F700EB5092 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AC317AD12312E16300EB5092 /* InstagramCHT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstagramCHT-Bridging-Header.h"; sourceTree = "<group>"; };
+		AC317AD22312E16A00EB5092 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		AC317AD32312E16B00EB5092 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		AC317AD42312E16B00EB5092 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		AC719D98230FC54E00FCB0DE /* SingleUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleUpViewController.swift; sourceTree = "<group>"; };
 		AC719D9C230FE56D00FCB0DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC719D9E230FE5F300FCB0DE /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -94,9 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				ACD2BCBD230F200B000B2F39 /* InstagramCHT */,
+				AC317AD42312E16B00EB5092 /* ProgressHUD.bundle */,
+				AC317AD32312E16B00EB5092 /* ProgressHUD.h */,
+				AC317AD22312E16A00EB5092 /* ProgressHUD.m */,
 				ACD2BCBC230F200B000B2F39 /* Products */,
 				B27D7B2CBF3A8DB0DB686D67 /* Pods */,
 				42E1F4A55B1980FB9A4E8C82 /* Frameworks */,
+				AC317AD12312E16300EB5092 /* InstagramCHT-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */,
+				AC317ACD2312BE2800EB5092 /* AuthService.swift */,
+				AC317ACF2312D9F700EB5092 /* Config.swift */,
 				AC719DB32310138C00FCB0DE /* ViewControllers */,
 				AC719DB22310136600FCB0DE /* Storyboards */,
 				ACD2BCC5230F200B000B2F39 /* Assets.xcassets */,
@@ -128,7 +144,6 @@
 				F148C83D842063AA36856872 /* Pods-InstagramCHT.debug.xcconfig */,
 				C2E18859327A12C87DF53733 /* Pods-InstagramCHT.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,6 +182,7 @@
 					ACD2BCBA230F200A000B2F39 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5TV335X6U8;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -196,6 +212,7 @@
 			files = (
 				ACD2BCD9230F27B3000B2F39 /* Start.storyboard in Resources */,
 				AC719DAB2310032400FCB0DE /* Home.storyboard in Resources */,
+				AC317AD62312E16E00EB5092 /* ProgressHUD.bundle in Resources */,
 				ACD2BCC9230F200B000B2F39 /* LaunchScreen.storyboard in Resources */,
 				ACD2BCC6230F200B000B2F39 /* Assets.xcassets in Resources */,
 				AC719DA7230FF88F00FCB0DE /* Main.storyboard in Resources */,
@@ -262,9 +279,12 @@
 				ACD2BCDB230F3615000B2F39 /* SingleViewController.swift in Sources */,
 				AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */,
 				ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */,
+				AC317ACE2312BE2800EB5092 /* AuthService.swift in Sources */,
 				AC719D9D230FE56E00FCB0DE /* HomeViewController.swift in Sources */,
 				AC719DA3230FE66800FCB0DE /* ActivityViewController.swift in Sources */,
+				AC317AD52312E16E00EB5092 /* ProgressHUD.m in Sources */,
 				AC719D9F230FE5F300FCB0DE /* DiscoverViewController.swift in Sources */,
+				AC317AD02312D9F700EB5092 /* Config.swift in Sources */,
 				AC719DA5230FE6AC00FCB0DE /* ProfileViewController.swift in Sources */,
 				AC719DA1230FE62B00FCB0DE /* CameraViewController.swift in Sources */,
 			);
@@ -382,11 +402,14 @@
 			baseConfigurationReference = F148C83D842063AA36856872 /* Pods-InstagramCHT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5TV335X6U8;
 				INFOPLIST_FILE = InstagramCHT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testcht.InstagramCHT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InstagramCHT-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -396,11 +419,13 @@
 			baseConfigurationReference = C2E18859327A12C87DF53733 /* Pods-InstagramCHT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5TV335X6U8;
 				INFOPLIST_FILE = InstagramCHT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testcht.InstagramCHT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InstagramCHT-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

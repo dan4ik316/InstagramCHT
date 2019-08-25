@@ -12,7 +12,7 @@
         <!--Single View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SingleViewController" customModule="InstagramCHT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingleViewController" id="BYZ-38-t0r" customClass="SingleViewController" customModule="InstagramCHT" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,7 +51,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.59904751712328763" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="g6e-v2-yoj" kind="presentation" id="Epm-OW-ufp"/>
+                                            <action selector="signInButton_TouchUpinside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ray-e5-dUu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -94,6 +94,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="aEZ-WN-oAS" id="3H9-7r-Vce"/>
                         <outlet property="passwordTextField" destination="5cT-1G-qLP" id="No2-4S-IUf"/>
+                        <outlet property="signInButton" destination="aVa-Q8-wrE" id="mFo-P0-2Fj"/>
+                        <segue destination="g6e-v2-yoj" kind="presentation" identifier="signInToTabbarVC" id="i02-hG-W0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,7 +105,7 @@
         <!--Single Up View Controller-->
         <scene sceneID="mWH-kk-o9g">
             <objects>
-                <viewController id="8uQ-98-NNy" customClass="SingleUpViewController" customModule="InstagramCHT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingleUpViewController" id="8uQ-98-NNy" customClass="SingleUpViewController" customModule="InstagramCHT" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kTk-Ua-tgb"/>
                         <viewControllerLayoutGuide type="bottom" id="eo9-Ab-ar9"/>
@@ -194,7 +196,9 @@
                         <outlet property="emailTextField" destination="ugy-yU-k3e" id="wbH-Ts-ela"/>
                         <outlet property="passwordTextField" destination="tKB-Eh-Be0" id="vQQ-yU-QJR"/>
                         <outlet property="profileImage" destination="73x-Nb-oPW" id="iRL-LB-2sP"/>
+                        <outlet property="signUpButton" destination="wjS-Qd-ZlL" id="tqs-Op-qLf"/>
                         <outlet property="usernameTextField" destination="HbW-O5-cok" id="4Rq-BP-nsa"/>
+                        <segue destination="g6e-v2-yoj" kind="presentation" identifier="signUpToTabbarVC" id="U9K-hV-Gx0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a1-8j-HJe" sceneMemberID="firstResponder"/>
@@ -207,10 +211,13 @@
                 <viewControllerPlaceholder storyboardName="Main" id="g6e-v2-yoj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcB-3A-vFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="123"/>
+            <point key="canvasLocation" x="1552" y="-58"/>
         </scene>
     </scenes>
     <resources>
         <image name="images" width="231" height="218"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="i02-hG-W0g"/>
+    </inferredMetricsTieBreakers>
 </document>
