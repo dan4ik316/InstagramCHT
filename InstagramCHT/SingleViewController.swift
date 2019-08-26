@@ -58,8 +58,8 @@ class SingleViewController: UIViewController {
     
     func handleTextField(){
        
-        emailTextField.addTarget(self, action: #selector(SingleUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
-        passwordTextField.addTarget(self, action: #selector(SingleUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
+        emailTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: UIControlEvents.editingChanged)
+        passwordTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: UIControlEvents.editingChanged)
     }
     
     func textFieldDidChange(){
