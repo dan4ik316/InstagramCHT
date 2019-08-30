@@ -22,6 +22,7 @@
 		AC719DAB2310032400FCB0DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC719DAA2310032400FCB0DE /* Home.storyboard */; };
 		AC719DB523102AED00FCB0DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC719DB423102AED00FCB0DE /* GoogleService-Info.plist */; };
 		AC98185F23152C4D000A9EFC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98185E23152C4D000A9EFC /* Post.swift */; };
+		ACC22B582319D0C70077712B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC22B572319D0C60077712B /* HomeTableViewCell.swift */; };
 		ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */; };
 		ACD2BCC6230F200B000B2F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC5230F200B000B2F39 /* Assets.xcassets */; };
 		ACD2BCC9230F200B000B2F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD2BCC7230F200B000B2F39 /* LaunchScreen.storyboard */; };
@@ -47,6 +48,7 @@
 		AC719DAA2310032400FCB0DE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AC719DB423102AED00FCB0DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC98185E23152C4D000A9EFC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ACC22B572319D0C60077712B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		ACD2BCBB230F200B000B2F39 /* InstagramCHT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCHT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD2BCC5230F200B000B2F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			name = Module;
 			sourceTree = "<group>";
 		};
+		ACC22B592319D10F0077712B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACC22B572319D0C60077712B /* HomeTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		ACD2BCB2230F2009000B2F39 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 				ACD2BCBE230F200B000B2F39 /* AppDelegate.swift */,
 				AC317ACD2312BE2800EB5092 /* AuthService.swift */,
 				AC317ACF2312D9F700EB5092 /* Config.swift */,
+				ACC22B592319D10F0077712B /* Views */,
 				AC98185D23152BED000A9EFC /* Module */,
 				AC719DB32310138C00FCB0DE /* ViewControllers */,
 				AC719DB22310136600FCB0DE /* Storyboards */,
@@ -289,6 +300,7 @@
 			files = (
 				ACD2BCDB230F3615000B2F39 /* SingleViewController.swift in Sources */,
 				AC719D99230FC54E00FCB0DE /* SingleUpViewController.swift in Sources */,
+				ACC22B582319D0C70077712B /* HomeTableViewCell.swift in Sources */,
 				ACD2BCBF230F200B000B2F39 /* AppDelegate.swift in Sources */,
 				AC98185F23152C4D000A9EFC /* Post.swift in Sources */,
 				AC317ACE2312BE2800EB5092 /* AuthService.swift in Sources */,
